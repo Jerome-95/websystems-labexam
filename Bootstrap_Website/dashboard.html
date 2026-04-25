@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Jerome — Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -9,13 +10,17 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
       <a class="navbar-brand" href="#">Student Dashboard | Jerome</a>
+      
+      <div class="ms-auto">
+        <a href="login.html" class="btn btn-outline-light btn-sm">Logout</a>
+      </div>
     </div>
   </nav>
 
   <div class="container mt-4">
     <div class="row g-3">
       <div class="col-md-3">
-        <div class="card text-white bg-primary">
+        <div class="card text-white bg-primary shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Subjects Enrolled</h5>
             <p class="card-text fs-2">8</p>
@@ -23,7 +28,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card text-white bg-success">
+        <div class="card text-white bg-success shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Assignments Done</h5>
             <p class="card-text fs-2">24</p>
@@ -31,7 +36,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card text-white bg-warning">
+        <div class="card text-white bg-warning shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Pending Tasks</h5>
             <p class="card-text fs-2">5</p>
@@ -39,7 +44,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card text-white bg-info">
+        <div class="card text-white bg-info shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Attendance Rate</h5>
             <p class="card-text fs-2">98%</p>
@@ -49,49 +54,51 @@
     </div>
 
     <div class="mt-4 bg-white p-3 rounded shadow-sm">
-      <h5>My Subjects</h5>
-      <table class="table table-bordered table-hover">
-        <thead class="table-dark">
-          <tr>
-            <th>Subject</th>
-            <th>Instructor</th>
-            <th>Schedule</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Web Systems</td>
-            <td>Engr. Smith</td>
-            <td>MWF 8:00 AM</td>
-            <td>Active</td>
-          </tr>
-          <tr>
-            <td>Database Management</td>
-            <td>Prof. Garcia</td>
-            <td>TTH 10:30 AM</td>
-            <td>Active</td>
-          </tr>
-          <tr>
-            <td>Data Communications</td>
-            <td>Dr. Lee</td>
-            <td>MWF 1:00 PM</td>
-            <td>Active</td>
-          </tr>
-          <tr>
-            <td>Software Engineering</td>
-            <td>Ms. Rivera</td>
-            <td>TTH 2:00 PM</td>
-            <td>Active</td>
-          </tr>
-          <tr>
-            <td>Discrete Mathematics</td>
-            <td>Mr. Tan</td>
-            <td>Sat 9:00 AM</td>
-            <td>Active</td>
-          </tr>
-        </tbody>
-      </table>
+      <h5 class="mb-3">My Subjects</h5>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>Subject</th>
+              <th>Instructor</th>
+              <th>Schedule</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Systems</td>
+              <td>Engr. Smith</td>
+              <td>MWF 8:00 AM</td>
+              <td><span class="badge bg-success">Active</span></td>
+            </tr>
+            <tr>
+              <td>Database Management</td>
+              <td>Prof. Garcia</td>
+              <td>TTH 10:30 AM</td>
+              <td><span class="badge bg-success">Active</span></td>
+            </tr>
+            <tr>
+              <td>Data Communications</td>
+              <td>Dr. Lee</td>
+              <td>MWF 1:00 PM</td>
+              <td><span class="badge bg-success">Active</span></td>
+            </tr>
+            <tr>
+              <td>Software Engineering</td>
+              <td>Ms. Rivera</td>
+              <td>TTH 2:00 PM</td>
+              <td><span class="badge bg-success">Active</span></td>
+            </tr>
+            <tr>
+              <td>Discrete Mathematics</td>
+              <td>Mr. Tan</td>
+              <td>Sat 9:00 AM</td>
+              <td><span class="badge bg-success">Active</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
